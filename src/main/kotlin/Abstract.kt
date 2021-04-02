@@ -11,9 +11,15 @@ open class DomesticAnimal(override val animalType: String, open val petName: Str
     }
 }
 
-class Tiger(override val animalType: String) : Animal() {
+class Tiger(override val animalType: String) : WildAnimal() {
     override fun makeSound() {
         println("${this.animalType} make sound")
+    }
+}
+
+class Dog(animalType: String, petName: String): DomesticAnimal(animalType, petName) {
+    override fun makeSound() {
+        println("${this.animalType} make sound gav-gav")
     }
 }
 

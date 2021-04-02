@@ -23,13 +23,11 @@ class Person {
                 field = value
             }
         }
-        get() {
-            return field
-        }
+        get() = field
 
 }
 
-class Car(mod: String, num: String) : Movable, Info {
+class Car(mod: String, num: String) : Rideable, Info {
 
     override val number: String
     override val model: String
@@ -44,7 +42,7 @@ class Car(mod: String, num: String) : Movable, Info {
     }
 }
 
-class Aircraft : Movable {
+class Plane : Rideable {
     override fun move() {
         println("The plane is flying")
     }

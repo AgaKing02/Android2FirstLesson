@@ -1,4 +1,4 @@
-interface Movable{
+interface Rideable{
     fun move()
     fun stop(){
         println("Stop")

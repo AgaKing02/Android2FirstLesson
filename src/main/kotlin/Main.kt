@@ -20,12 +20,17 @@ fun main(args: Array<String>) {
     person.age = 18
     println("Person's age : ${person.age}")
 
-    val animal: Animal = Tiger("Cat")
+    val animal: Animal = Dog("Any","layka")
     animal.makeSound()
 
     val car: Car = Car("Chevrolet Corvette 1973 ", "7810SAG")
     println(car.model)
     println(car.number)
+
+    val plane:Plane=Plane()
+
+    plane.move()
+    plane.stop()
 
     car.move()
     car.stop()
